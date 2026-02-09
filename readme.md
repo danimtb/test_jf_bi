@@ -7,7 +7,7 @@ the Conan Artifactory extension commands for comparison.
 ## Requirements
 
 - JFrog CLI version 2.88.0
-- Conan client (any version 2.X version, tested with 2.24.0) 
+- Conan client (any version 2.2X version, tested with 2.24.0)
 - JFrog Artifactory instance with a conan-local repository
 
 ## Configure the Conan client
