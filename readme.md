@@ -19,6 +19,16 @@ $ conan config install https://github.com/conan-io/conan-extensions.git
 $ conan art:server add my_artifactory <artifactory-instance-url> --user=<user> --password=<password>
 ```
 
+Here is an example of the configuration steps when running an Artifactory instance on your local machine
+with a `conan-local` repo created and a user `admin` and password `password`:
+
+```bash
+$ conan remote add conan-local http://localhost:8081/artifactory/api/conan/conan-local
+$ conan remote login conan-local admin -p password
+$ conan config install https://github.com/conan-io/conan-extensions.git
+$ conan art:server add my_artifactory http://localhost:8081/artifactory --user=admin --password=password
+```
+
 ## Test cases
 
 ### Test case 1 ([``create``](/create/) folder)
@@ -60,7 +70,7 @@ Conan commands:
 ```bash
 $ conan create -f json > create2.json
 $ conan upload hello/1.0 --remote conan-local
-$ conan art:build-info create create2.json my_build 2 conan-local --server my_artifactory
+$ conan art:build-info create create2.json my_build 2 conan-local --with-dependencies --server my_artifactory
 ```
 
 ### Test case 3 ([``txt``](/txt/) folder)
@@ -81,7 +91,7 @@ Conan commands:
 ```bash
 $ conan install -f json > install.json
 $ conan upload hello/1.0 --remote conan-local
-$ conan art:build-info install.json install 1 conan-local --server my_artifactory
+$ conan art:build-info install.json install 1 conan-local --add-cached-deps --server my_artifactory
 ```
 
 ### Test case 4 ([``no_recipe``](/no_recipe/) folder)
