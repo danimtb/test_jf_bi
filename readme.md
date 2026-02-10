@@ -70,7 +70,7 @@ Conan commands:
 ```bash
 $ conan create -f json > create2.json
 $ conan upload hello/1.0 --remote conan-local
-$ conan art:build-info create create2.json my_build 2 conan-local --server my_artifactory
+$ conan art:build-info create create2.json my_build 2 conan-local --with-dependencies --server my_artifactory
 ```
 
 ### Test case 3 ([``txt``](/txt/) folder)
@@ -91,7 +91,7 @@ Conan commands:
 ```bash
 $ conan install -f json > install.json
 $ conan upload hello/1.0 --remote conan-local
-$ conan art:build-info install.json install 1 conan-local --server my_artifactory
+$ conan art:build-info install.json install 1 conan-local --add-cached-deps --server my_artifactory
 ```
 
 ### Test case 4 ([``no_recipe``](/no_recipe/) folder)
