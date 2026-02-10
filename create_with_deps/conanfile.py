@@ -34,7 +34,7 @@ class helloRecipe(ConanFile):
         cmake_layout(self)
 
     def requirements(self):
-        self.requires("zlib/1.2.11")
+        self.requires("zlib/1.3.1")
 
     def generate(self):
         deps = CMakeDeps(self)

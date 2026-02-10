@@ -1,0 +1,73 @@
+{
+    "version": "1.0.1",
+    "name": "install",
+    "number": "1",
+    "agent": {},
+    "started": "2026-02-10T15:18:23.817+0100",
+    "buildAgent": {
+        "name": "conan",
+        "version": "2.23.0"
+    },
+    "modules": [
+        {
+            "type": "conan",
+            "id": "zlib/1.3.1#cac0f6daea041b0ccf42934163defb20",
+            "artifacts": [
+                {
+                    "type": "tgz",
+                    "sha256": "bb601d357a2089d7d65427982630d523ea5b1224ca33424be12375509f6e06e0",
+                    "sha1": "fa63d1d1cea3dcf1f54e9a68286bca86a367ad06",
+                    "md5": "9bd0bfa6948517429756adadaaad62ff",
+                    "name": "conan_export.tgz",
+                    "path": "conan-local/_/zlib/1.3.1/_/cac0f6daea041b0ccf42934163defb20/export/conan_export.tgz"
+                },
+                {
+                    "type": "py",
+                    "sha256": "4ca5db5afe62e282e598c1a53951a95fbc432b67d4284449164a784fdb67f932",
+                    "sha1": "096169aa6b128bab6763ed9127c7dd34f47b1ffd",
+                    "md5": "373b2b3b570caa67d7fcce21b9d484c1",
+                    "name": "conanfile.py",
+                    "path": "conan-local/_/zlib/1.3.1/_/cac0f6daea041b0ccf42934163defb20/export/conanfile.py"
+                },
+                {
+                    "type": "txt",
+                    "sha256": "c41370395fbd66d7f9dbe65d3e579a23b5e7a66409a9dc658656afd27f333a25",
+                    "sha1": "a9a1aca824033562355455529f2cbcce02071df8",
+                    "md5": "5d34388f8b886fc85306c851d6d2010c",
+                    "name": "conanmanifest.txt",
+                    "path": "conan-local/_/zlib/1.3.1/_/cac0f6daea041b0ccf42934163defb20/export/conanmanifest.txt"
+                }
+            ]
+        },
+        {
+            "type": "conan",
+            "id": "zlib/1.3.1#cac0f6daea041b0ccf42934163defb20:ca639360bb681229d056d23829e74b0c62d596de#14f9770b1ac1d6bb4a1dd468d54124ba",
+            "artifacts": [
+                {
+                    "type": "tgz",
+                    "sha256": "7ecc5b2b74c75f9d09dc0e2e8e6a3765902281d82477b9d420c467d7f8590385",
+                    "sha1": "567c9d2fc6ef8f856f47d32789e2c5e77042c07b",
+                    "md5": "0b6d89f6c81d091a8e879bba7224aff8",
+                    "name": "conan_package.tgz",
+                    "path": "conan-local/_/zlib/1.3.1/_/cac0f6daea041b0ccf42934163defb20/package/ca639360bb681229d056d23829e74b0c62d596de/14f9770b1ac1d6bb4a1dd468d54124ba/conan_package.tgz"
+                },
+                {
+                    "type": "txt",
+                    "sha256": "5eb9f36605b67f84bcdb02fb0ddd644dd5875909be8d85f4a747a8495eb9c3d4",
+                    "sha1": "ae4d52802dd4d6115568ba83b7b95a60fafbe38d",
+                    "md5": "e1a1a0cdafe5ff233544472be28dac47",
+                    "name": "conanmanifest.txt",
+                    "path": "conan-local/_/zlib/1.3.1/_/cac0f6daea041b0ccf42934163defb20/package/ca639360bb681229d056d23829e74b0c62d596de/14f9770b1ac1d6bb4a1dd468d54124ba/conanmanifest.txt"
+                },
+                {
+                    "type": "txt",
+                    "sha256": "afb5eb74f64078b7cf64cfd49c19bab50edf8616f41a7b6af5e8e31652f797fc",
+                    "sha1": "ca639360bb681229d056d23829e74b0c62d596de",
+                    "md5": "1ada7bb09f48364d543f42525e4f9bb5",
+                    "name": "conaninfo.txt",
+                    "path": "conan-local/_/zlib/1.3.1/_/cac0f6daea041b0ccf42934163defb20/package/ca639360bb681229d056d23829e74b0c62d596de/14f9770b1ac1d6bb4a1dd468d54124ba/conaninfo.txt"
+                }
+            ]
+        }
+    ]
+}
