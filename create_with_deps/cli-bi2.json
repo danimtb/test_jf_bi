@@ -1,0 +1,14 @@
+{
+  "name": "my_build",
+  "number": "2",
+  "agent": {
+    "name": "jfrog-cli-go",
+    "version": "2.91.0"
+  },
+  "buildAgent": {
+    "name": "GENERIC",
+    "version": "2.91.0"
+  },
+  "started": "2026-02-10T15:05:41.898+0100",
+  "artifactoryPrincipal": "admin"
+}

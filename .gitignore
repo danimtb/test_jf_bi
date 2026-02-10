@@ -2,3 +2,12 @@
 *.bat
 *.sh
 conan_home/
+
+# Allow build-info outputs for comparison in the readme
+!create/cli-bi1.json
+!create/conan-bi1.json
+!create_with_deps/cli-bi2.json
+!create_with_deps/conan-bi2.json
+!install/cli-bi-install.json
+!install/conan-bi-install.json
+!no_recipe/conan-bi-no_recipe.json

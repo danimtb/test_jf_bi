@@ -1,0 +1,36 @@
+{
+  "name": "install",
+  "number": "1",
+  "agent": {
+    "name": "jfrog-cli-go",
+    "version": "2.91.0"
+  },
+  "buildAgent": {
+    "name": "GENERIC",
+    "version": "2.91.0"
+  },
+  "modules": [
+    {
+      "type": "conan",
+      "id": "install",
+      "dependencies": [
+        {
+          "id": "zlib:1.3.1",
+          "scopes": [
+            "runtime"
+          ],
+          "requestedBy": [
+            [
+              "install"
+            ]
+          ],
+          "sha1": "a9a1aca824033562355455529f2cbcce02071df8",
+          "md5": "5d34388f8b886fc85306c851d6d2010c",
+          "sha256": "c41370395fbd66d7f9dbe65d3e579a23b5e7a66409a9dc658656afd27f333a25"
+        }
+      ]
+    }
+  ],
+  "started": "2026-02-10T15:17:13.234+0100",
+  "artifactoryPrincipal": "admin"
+}

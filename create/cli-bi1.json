@@ -1,0 +1,20 @@
+{
+  "name": "my_build",
+  "number": "1",
+  "agent": {
+    "name": "jfrog-cli-go",
+    "version": "2.91.0"
+  },
+  "buildAgent": {
+    "name": "GENERIC",
+    "version": "2.91.0"
+  },
+  "modules": [
+    {
+      "type": "conan",
+      "id": "hello:1.0"
+    }
+  ],
+  "started": "2026-02-10T11:56:27.186+0100",
+  "artifactoryPrincipal": "admin"
+}
