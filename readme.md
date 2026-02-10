@@ -12,11 +12,12 @@ the Conan Artifactory extension commands for comparison.
 
 ## Configure the Conan client
 
-- ``conan remote add conan-local <url-of-the-artifactory-repo>``
-- ``conan remote login conan-local <user> -p <password>``
-- ``conan config install https://github.com/conan-io/conan-extensions``
-- ``conan art:server add my_artifactory <artifactory-instance-url> --user=<user> --password=<password>``
-
+```bash
+$ conan remote add conan-local <url-of-the-artifactory-repo>
+$ conan remote login conan-local <user> -p <password>
+$ conan config install https://github.com/conan-io/conan-extensions.git
+$ conan art:server add my_artifactory <artifactory-instance-url> --user=<user> --password=<password>
+```
 
 ## Test cases
 
