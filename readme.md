@@ -19,6 +19,16 @@ $ conan config install https://github.com/conan-io/conan-extensions.git
 $ conan art:server add my_artifactory <artifactory-instance-url> --user=<user> --password=<password>
 ```
 
+Here is an example of the configuration steps when running an Artifactory instance on your local machine
+with a `conan-local` repo created and a user `admin` and password `password`:
+
+```bash
+$ conan remote add conan-local http://localhost:8081/artifactory/api/conan/conan-local
+$ conan remote login conan-local admin -p password
+$ conan config install https://github.com/conan-io/conan-extensions.git
+$ conan art:server add my_artifactory http://localhost:8081/artifactory --user=admin --password=password
+```
+
 ## Test cases
 
 ### Test case 1 ([``create``](/create/) folder)
