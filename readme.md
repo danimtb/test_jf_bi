@@ -12,15 +12,20 @@ the Conan Artifactory extension commands for comparison.
 
 ## Configure the Conan client
 
-- ``conan remote add conan-local <url-of-the-artifactory-repo>``
-- ``conan remote login conan-local <user> -p <password>``
-- ``conan config install https://github.com/conan-io/conan-extensions``
-- ``conan art:server add my_artifactory <artifactory-instance-url> --user=<user> --password=<password>``
-
+```bash
+$ conan remote add conan-local <url-of-the-artifactory-repo>
+$ conan remote login conan-local <user> -p <password>
+$ conan config install https://github.com/conan-io/conan-extensions.git
+$ conan art:server add my_artifactory <artifactory-instance-url> --user=<user> --password=<password>
+```
 
 ## Test cases
 
 ### Test case 1 ([``create``](/create/) folder)
+
+```bash
+$ cd create
+```
 
 JFrog CLI commands:
 
@@ -39,6 +44,10 @@ $ conan art:build-info create create1.json my_build 1 conan-local --server my_ar
 
 ### Test case 2 ([``create_with_deps``](/create_with_deps/) folder)
 
+```bash
+$ cd create_with_deps
+```
+
 JFrog CLI commands:
 
 ```bash
@@ -56,6 +65,10 @@ $ conan art:build-info create create2.json my_build 2 conan-local --server my_ar
 
 ### Test case 3 ([``txt``](/txt/) folder)
 
+```bash
+$ cd txt
+```
+
 JFrog CLI commands:
 
 ```bash
@@ -72,6 +85,10 @@ $ conan art:build-info install.json install 1 conan-local --server my_artifactor
 ```
 
 ### Test case 4 ([``no_recipe``](/no_recipe/) folder)
+
+```bash
+$ cd no_recipe
+```
 
 JFrog CLI commands:
 
