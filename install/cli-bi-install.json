@@ -3,11 +3,11 @@
   "number": "1",
   "agent": {
     "name": "jfrog-cli-go",
-    "version": "2.91.0"
+    "version": "2.88.0"
   },
   "buildAgent": {
     "name": "GENERIC",
-    "version": "2.91.0"
+    "version": "2.88.0"
   },
   "modules": [
     {
@@ -29,8 +29,28 @@
           "sha256": "c41370395fbd66d7f9dbe65d3e579a23b5e7a66409a9dc658656afd27f333a25"
         }
       ]
+    },
+    {
+      "type": "conan",
+      "id": "txt",
+      "dependencies": [
+        {
+          "id": "zlib:1.2.11",
+          "scopes": [
+            "runtime"
+          ],
+          "requestedBy": [
+            [
+              "txt"
+            ]
+          ],
+          "sha1": "97912cbb87216b051f22419586bb99924bf7d8df",
+          "md5": "82a9580f02145af3f734ca9313e7ce00",
+          "sha256": "0fa4cbd4e93958873b548d0e452031916e51ca713e275be7d3092e697e7d9dc2"
+        }
+      ]
     }
   ],
-  "started": "2026-02-10T15:17:13.234+0100",
+  "started": "2026-02-09T13:04:53.300+0100",
   "artifactoryPrincipal": "admin"
 }

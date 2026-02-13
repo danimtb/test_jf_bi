@@ -75,6 +75,7 @@ JFrog CLI commands:
 
 ```bash
 $ jf conan create --build-name my_build --build-number 2
+$ jf conan upload hello/1.0 --build-name my_build --build-number 2
 $ jf rt bp my_build 2 --dry-run > cli-bi2.json
 ```
 
@@ -98,6 +99,7 @@ JFrog CLI commands:
 
 ```bash
 $ jf conan install --build-name install --build-number 1
+$ jf conan upload zlib/1.3.1 -r conan-local --build-name install --build-number 1
 $ jf rt bp install 1 --dry-run > cli-bi-install.json
 ```
 
